@@ -4,7 +4,6 @@ import "./App.css";
 import ModalForm from "./components/ModalForm";
 import UserList from "./components/UserList";
 import { EMPY_FORM_VALUES } from "./shared/constants";
-import { set } from "react-hook-form";
 
 const URL_BASE = "https://users-crud.academlo.tech/";
 
@@ -72,7 +71,7 @@ function App() {
         <h1 className="text-6xl font-bold self-end">Users</h1>
         <button
           onClick={handlerOpenModal}
-          className="flex items-center space-x-2 bg-button text-bg-input px-6 py-1 text-base font-medium"
+          className="flex items-center space-x-2 bg-button hover:bg-[#6168a8] text-bg-input px-6 py-1 text-base font-medium"
           type="button"
         >
           <i className="bx bx-plus text-2xl"></i>

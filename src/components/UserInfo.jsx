@@ -1,7 +1,7 @@
 const UserInfo = ({ user, deleteUser, handlerClickUpdateUser }) => {
   return (
-    <article className="grid bg-main max-w-[350px] items-center justify-center mx-auto border border-brdr-input rounded-md">
-      <section className="p-4 grid justify-center items-center overflow-hidden">
+    <article className="grid bg-main max-w-[250px] w-[300px] items-center justify-center mx-auto border border-brdr-input rounded-md">
+      <section className="p-4 grid justify-center overflow-hidden">
         <ul className="">
           <li className="font-bold text-2xl line py-4 h-[100px]">
             {user.first_name} {user.last_name}
@@ -29,12 +29,18 @@ const UserInfo = ({ user, deleteUser, handlerClickUpdateUser }) => {
         <hr className="text-brdr-input" />
       </section>
 
-      <div className="flex h-[60px] gap-4 justify-end pr-3 overflow-hidden">
-        <button onClick={() => deleteUser(user.id)}>
+      <div className="flex h-[60px] gap-4 justify-end pr-3 overflow-hidden ">
+        <button
+          className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-100 hover:drop-shadow-lg"
+          onClick={() => deleteUser(user.id)}
+        >
           <i className="bx bx-trash bg-delete text-bg-input p-3 border-[#D85D5D] rounded-lg"></i>
         </button>
-        <button onClick={() => handlerClickUpdateUser(user)}>
-          <i className="bx bx-edit-alt bg-edit text-brdr-input border-[#BDBDBD] p-3 rounded-lg"></i>
+        <button
+          className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-100 hover:drop-shadow-lg"
+          onClick={() => handlerClickUpdateUser(user)}
+        >
+          <i className="bx bx-edit-alt bg-edit text-brdr-input border-[#BDBDBD]  p-3 rounded-lg"></i>
         </button>
       </div>
     </article>

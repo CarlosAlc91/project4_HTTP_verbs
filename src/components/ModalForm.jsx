@@ -9,6 +9,7 @@ const ModalForm = ({
   updateUser,
   setIsShowModal,
   setIsUserToBeUpdated,
+  DeleteModal
 }) => {
   /* STATES */
   const { handleSubmit, register, reset } = useForm();
@@ -52,7 +53,7 @@ const ModalForm = ({
           className="right-3 top-3 absolute"
           type="button"
         >
-          <i className="bx bx-x text-2xl"></i>
+          <i className="bx bx-x text-2xl hover:text-[red]"></i>
         </button>
 
         <div className="grid">
@@ -105,7 +106,7 @@ const ModalForm = ({
           />
         </div>
 
-        <button className="bg-button text-bg-form border-brdr-input p-1 border">
+        <button className="bg-button text-bg-form border-brdr-input p-1 border transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-100">
           {isUserToBeUpdated ? "Save changes" : "Create user"}
         </button>
       </form>
