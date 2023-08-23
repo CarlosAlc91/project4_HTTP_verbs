@@ -1,8 +1,7 @@
-# React + Vite
+# Creation of a CRUD user's admin app using HTTP verbs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project we're using http verbs get, post, patch-put, delete to create a CRUD app consuming an users API.
 
-Currently, two official plugins are available:
+HTTP Verbs:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This is the [API](https://users-crud.academlo.tech/swagger/) we'll be consuming from.
